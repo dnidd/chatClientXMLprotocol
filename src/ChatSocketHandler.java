@@ -71,7 +71,7 @@ public class ChatSocketHandler implements Runnable {
                     // <namn> (<epost>): <meddelande>
                     System.out.println(name + " (" + email + "): " + body);
                 } catch (JDOMException e) {
-                    System.err.println( "KUNDE INTE PARSA ETT MEDDELANDE: " + message);
+                    System.err.println( "COULD NOT PARSE A MESSAGE: " + message);
                 }
             }
         } catch (IOException e) {
